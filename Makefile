@@ -1,8 +1,8 @@
 plan:
-	terraform plan -state=github-actions-oidc.tfstate
+	terraform plan
 
 apply:
-	terraform apply -state=github-actions-oidc.tfstate -backup=- -compact-warnings
+	terraform apply -backup=- -compact-warnings
 
 init:
 	terraform init
